@@ -1,0 +1,25 @@
+{
+    "name": "hpautoedit",
+    "description": "清除所有D版发帖回复",
+    "version": "0.5",
+    "manifest_version": 2,
+
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      },
+    
+     "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "storage"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["https://www.hi-pda.com/forum/*"],
+          "js": ["jquery3.js","contentscript.js"],
+          "run_at": "document_start"
+        }
+    ]
+}
