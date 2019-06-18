@@ -39,7 +39,11 @@ function ajaxget(urladdr) {
 async function editall() {
     var nextPagebutton = document.querySelector('#wrap > div.main > div > div.threadlist.datalist > div > div > a.next');
     var maxPageAnchor = nextPagebutton.previousSibling;
-    var maxPageNum = parseInt(maxPageAnchor.text, 10);
+    var maxPageNum = parseInt(maxPageAnchor.text.match(/\d+/), 10);
+
+    if (nextPagebutton === null) {
+        maxPageNum = 1;
+    }
 
     var formhash = document.querySelector('#umenu > a:nth-child(8)').href.split('formhash=')[1]
 
@@ -66,6 +70,8 @@ async function editall() {
         await postEdit(formhash, halflist);
 
     }
+
+    console.log('修改完成')
 
 
 

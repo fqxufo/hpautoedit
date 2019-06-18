@@ -1,7 +1,7 @@
 {
     "name": "hpautoedit",
     "description": "清除所有D版发帖回复",
-    "version": "0.5",
+    "version": "0.51",
     "manifest_version": 2,
 
     "icons": {
