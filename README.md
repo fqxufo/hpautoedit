@@ -6,3 +6,5 @@
 ```
 
 chrome商店地址：https://chrome.google.com/webstore/detail/hpautoedit/opoggkjkfoibeleanmhfaeoickjjnhkd
+
+使用方法见论坛帖子：https://www.hi-pda.com/forum/viewthread.php?tid=2563206&rpid=52561382&fav=yes&ordertype=0&page=1#pid52561382
